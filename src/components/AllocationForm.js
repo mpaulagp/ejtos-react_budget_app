@@ -21,6 +21,11 @@ const AllocationForm = (props) => {
                 return;
             }
 
+            if(document.getElementById("b_value").value<2000){
+                alert("You cannot reduce the budget value lower than the spending");
+                return;
+            }
+
         const expense = {
             name: name,
             cost: parseInt(cost),
