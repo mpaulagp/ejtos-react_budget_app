@@ -15,6 +15,11 @@ const AllocationForm = (props) => {
                 setCost("");
                 return;
             }
+            
+            if(document.getElementById("b_value").value>20000){
+                alert("The value cannot exceed 20000");
+                return;
+            }
 
         const expense = {
             name: name,
